@@ -1,0 +1,813 @@
+<?php 
+require_once 'config/dbconfig.php';
+
+?>
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>VICHAIYUT HOSPITAL</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="js/modernizr.js"></script>
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+      .header-logo{
+      	margin: 0px;
+      }
+      </style>
+  </head>
+  <body>
+
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-3 header-logo">
+					<br>
+					<a href="index.php"><img src="images/logosmall_vichaiyut_hospital.png" alt="" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-xs-6 col-md-9">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid nav-bar">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+								<ul class="nav navbar-nav navbar-right">
+									<li><a class="menu active" href="index.php#home" >Home</a></li>
+									<li><a class="menu" href="index.php#about">About Us</a></li>
+									<li><a class="menu" href="index.php#service">Patient Service</a></li>
+									<li><a class="menu" href="index.php#team">Our Clinic</a></li>
+									<li><a class="menu" href="index.php#package">Package & Promotion</a></li>
+									<li><a class="menu" href="index.php#contact"> contact us</a></li>
+								</ul>
+							</div><!-- /navbar-collapse -->
+						</div><!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end of header area -->
+
+	<!-- team section -->
+	<section class="team bg-pattern-blue" id="team">
+		<div class="container">
+			<div class="row">
+				<div class="team-heading text-center">
+					<h2 style="margin-top:140px;">Management Team</h2>
+				</div>
+				<!-- Begin Doctor List -->
+				<div class="container">
+					<div class="list-group">
+						<!-- <a href="#" class="list-group-item" data-toggle="collapse" data-target="#paronpsrasena">
+							<h4 class="list-group-item-heading">Mr. Paron Israsena Na Ayudhaya
+							</h4>
+							<div id="paronpsrasena" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/paron.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position: </h4>
+									<ul>
+										<li>Chairman</li>
+									</ul>
+
+									<h4>Education:</h4>
+									<ul>	
+										<li>Master of Science (Mechanical Engineering), Massachusetts Institute of Technology, U.S.A.</li>
+										<li>Bachelor of Engineering (Mechanical Engineering), Chulalongkorn University</li>
+										<li>Bachelor of Engineering (Electrical Engineering), Second Class Honor, Chulalongkorn University</li>
+									</ul>
+
+									<h4>Work Experiences</h4>
+									<ul>
+										<li>Chairman of Vichaiyut Hospital </li>
+										<li>Chairman of the National Economics and Social Development Board</li>
+										<li>Member of the National Science&Technology Development Board</li>
+										<li>Chairman of the Board of Thaicom Public  Company Limited</li>
+										<li>Honorary President of Magnolia quality Development Corporation</li>
+										<li>Honorary President of the Federation of Thai Industrie</li>
+										<li>Member of Private Sector Collective Action Coalition Against Corruption Council (CAC)</li>
+										<li>Presedent of suksaphattana foundationa and president of Lighthouse  Project</li>
+										<li>Vice president of Thaicom Foundation</li>
+										<li>Member of State Enterprise Board  Selection Committee </li>
+										<li>Chairman of Shinawatra University Council</li>
+										<li>Committee of Institute for Management Education for Thailand Foundation (IMET)</li>
+										<li>Chairman of Mitr Technical Consultant Co.,Ltd</li>
+										<li> Committee of Park Nai Lart Co.,Ltd</li>
+										<li> Consultant of Thailand Quality Award</li>
+										<li>President of Darunsikkhalai School for Innovative Learning of KMUTT</li>
+										<li>Member of Thailand Railway Technology Development Institute Project Subcommittee</li>
+										<li>Member of National Competitiveness Development Committee</li>
+										<li>Honorary Member of Sasin Graduate Institute of Business Administration of Chulalongkorn University</li>
+										<li>Consultant of Management System Certification Institute (Thailand)</li>
+										<li>Honorary Council Member of Council of Chiang Mai Rajabhat University</li>
+										<li>Consultant of Eye Bank of Thailand Committee</li>
+										<li>Member of Thai Red Cross</li>
+									</ul>
+									<h4>Honours and Awards</h4>
+									<ul>
+										<li>Knight and Dame Grand Commander (Second Class, higher grade) of the Most Illustrious Order of Chula Chom Klao</li>
+										<li>Knight and Dame Grand Cordon (Special Class) of the Most Exalted Order of the White Elephant</li>
+										<li>Commanders in the Order of the Crown</li>
+										<li>Knight and Dame Grand Cordon (Special Class) of the Most Noble Order of the Crown of Thailand</li>
+										<li>Knight and Dame Commander (Second Class, lower grade) of the Most Illustrious Order of Chula Chom Klao</li>
+										<li>Knight and Dame Grand Cross (First Class) of the Most Exalted Order of the White Elephant</li>
+										<li>Grand Companion (Third Class, higher grade) of the Most Illustrious Order of Chula Chom Klao</li>
+										<li>Knight and Dame Grand Cross (First Class) of the Most Noble Order of the Crown of Thailand</li>
+										<li>Commander (Third Class) of the Most Admirable Order of the Direkgunabhorn.</li>
+										<li>Senator</li>
+										<li>Member of National Legislative Assembly of Thailand</li>
+									</ul>
+								</div>
+							</div>
+						</a> -->
+						<?php 
+							try
+                            { 
+
+                                $stmt = $db_con->prepare("SELECT * FROM management_team ORDER BY ID");
+                                $stmt->execute();
+                                $row = $stmt->fetchAll();
+                                foreach ($row as $result) {
+						?>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#m<?= $result["ID"]?>">
+							<h4 class="list-group-item-heading"><?= $result["name"]?></h4>
+							<div id="m<?= $result["ID"]?>" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="<?= $result["path_img"]?>" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position:</h4>
+									<ul>
+										<li><?= $result["position"]?></li>
+									</ul>
+									<?php 
+										if($result["specialty"] <> ""){
+									?>
+									<h4>Speciality:</h4> 
+									<ul>
+									<?php
+										$split_specialty = explode("-", $result["specialty"]);
+										foreach ($split_specialty as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["language_spoken"] <> ""){
+									?>
+									<h4>Language spoken: </h4>
+									<ul>
+									<?php
+										$split_language_spoken = explode("-", $result["language_spoken"]);
+										foreach ($split_language_spoken as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["medical_school"] <> ""){
+									?>
+									<h4>Medical school:</h4>	
+									<ul>
+									<?php
+										$split_medical_school = explode("-", $result["medical_school"]);
+										foreach ($split_medical_school as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["residencies"] <> ""){
+									?>
+									<h4>Residencies:</h4>
+									<ul>
+									<?php
+										$split_residencies = explode("-", $result["residencies"]);
+										foreach ($split_residencies as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["fellowship"] <> ""){
+									?>
+									<h4>Fellowships:</h4>
+									<ul>
+									<?php
+										$split_fellowship = explode("-", $result["fellowship"]);
+										foreach ($split_fellowship as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["certificate"] <> ""){
+									?>
+									<h4>Certifications:</h4>
+									<ul>
+									<?php
+										$split_certificate = explode("-", $result["certificate"]);
+										foreach ($split_certificate as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["education"] <> ""){
+									?>
+									<h4>Education:</h4>
+									<ul>
+									<?php
+										$split_education = explode("-", $result["education"]);
+										foreach ($split_education as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["experiences"] <> ""){
+									?>
+									<h4>Work Experiences:</h4>
+									<ul>
+									<?php
+										$split_experiences = explode("-", $result["experiences"]);
+										foreach ($split_experiences as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+										if($result["award"] <> ""){
+									?>
+									<h4>Hornours and Awards:</h4>
+									<ul>
+									<?php
+										$split_award = explode("-", $result["award"]);
+										foreach ($split_award as $key => $value) {
+											echo "<li>".$value."</li>";
+										}
+									?>
+									
+									</ul>
+									<?php
+										}
+									?>
+								</div>
+							</div>
+						</a>
+						<?php
+							}
+                            }
+                            catch(PDOException $e){
+                                echo $e->getMessage();
+                                // echo "No records";
+                            }
+						?>
+						<!-- <a href="#" class="list-group-item" data-toggle="collapse" data-target="#tasniya-pun">
+							<h4 class="list-group-item-heading">Tanpuying Tasniya Punyagupta</h4>
+							<div id="tasniya-pun" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/tusanee.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>
+									<ul>
+									<li>Executive Director </li>
+								</ul>
+	
+<h4>Education</h4>	
+<ul>
+<li>Bachelor in Arts, Chulalongkorn University</li>
+	<li>Ph.D., Master of Science in Elementary Education, University of Wisconsin, U.S.A.</li>
+</ul>
+	
+<h4>Work Experiences</h4>	
+<ul>
+<li>Assistant Librarian at USIS, Liason Officer to Fullbright Foundation</li>
+	<li>Head of English Department, Faculty of Humanities, Kasetsart University</li>
+	<li>Principal of Chitralada School</li>
+</ul>
+	
+<h4>Honours and Awards</h4>	
+<ul>
+<li>International Study Grant from AAUW</li>
+	<li>Royal Decorations of the Chula Chomklao and the Crown of Thailand</li>
+	<li>Honorary Degrees : Honorary Doctorate from Chulalongkorn University</li>
+	<li>Angela Award from Mater Dei School</li>
+	<li>Outstanding Teacher's Award from Dr.Tiam Chokewattana Foundation</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#naronk-rod">
+							<h4 class="list-group-item-heading">Lt. Gen. Clinical Professor, Dr. Naronk Rodwarna</h4>
+							<div id="naronk-rod" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/naronk.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>
+									<ul>
+										<li>Executive Director</li> 
+									</ul>
+	
+<h4>Speciality</h4>
+<ul>
+	<li>General Surgery</li>
+	<li>Cardio-Thoracic Surgery</li>
+</ul>
+	
+<h4>Language spoken</h4>
+<ul>
+	<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>
+<ul>
+	<li>Faculty of Medicine, Chulalongkorn University</li>
+</ul>
+	
+<h4>Residencies</h4>
+<ul>
+	<li>General Surgery, St. Luke's Hospital and Medical Center, Cleveland, Ohio, U.S.A.</li>
+	<li>Thoracic Surgery, School of Medicine, Case Western Reserve University, Cleveland, Ohio,U.S.A.</li>
+</ul>
+	
+<h4>Fellowships</h4>
+<ul>
+	<li>Royal College of Surgeons of Thailand (FRCST.)</li>
+	<li>International College of Surgeons (FICS.)</li>
+	<li>American College of Surgeons (FACS.)</li>
+	<li>American College of Chest-Physicians (FCCP.)</li>
+</ul>
+	
+<h4>Certifications</h4>
+<ul>
+	<li>Thai Board of Thoracic Surgery</li>
+	<li>Thai Board of Critical Care Medicine</li>
+	<li>Diplomate, American Board of Surgery</li>
+	<li>Diplomate, American Board of Thoracic Surgery</li>
+</ul>
+	
+<h4>Work Experiences</h4>
+<ul>
+	<li>Dean for Academic Affairs, Phramongkutklao College of Medicine, Mahidol University</li>
+	<li>Clinical Professor of Surgery, Phramongkutklao College of Medicine, Mahidol University</li>
+	<li>Deputy Surgeon General and Senior Consultant and Expert of Royal Thai Army</li>
+	<li>Hospital Director and Surgeon-In-Chief, Vichaiyut Hospital</li>
+	<li>President of The Association of Military Surgeons of Thailand Under the Royal Patronage of His Majesty the King</li>
+	<li>President of The Society of Thoracic Surgeons of Thailand</li>
+	<li>Governor, American College of Surgeons, Thailand Chapter </li>
+	<li>President, Royal College of Surgeons of Thailand</li>
+	<li>President of Association of Thoracic and Cardovascular Surgeons of Asia</li>
+</ul>
+	
+<h4>Honours and Awards</h4>
+<ul>
+	<li>Honorary Royal Guard Regiment, Chula Chomklao Cadet Academy, Royal Thai Army</li>
+	<li>Outstanding Teacher's Award from Phramongkutklao College of Medicine, Mahidol University</li>
+	<li>Outstanding Medical Doctor's Award for Ethics from Medical Council of Thailand</li>
+	<li>Outstanding Military Medical Doctor's Award for Academic and Researches from Medical Armsforce of Thailand</li>
+</ul>
+	
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#chamnan-bhu">
+							<h4 class="list-group-item-heading">Dr. Chamnan Bhu-eiam</h4>
+							<div id="chamnan-bhu" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/chamnan.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>	
+									<ul>
+										<li>Executive Director </li>
+									</ul>
+	
+<h4>Education</h4>	
+<ul>
+	<li>Faculty of Medicine, Chulalongkorn University</li>
+	<li>Leadership Program, Office of The Civil Service Commission</li>
+	<li>Leadership Program, Ministry of Public Health</li>
+	<li>Attend the seminar in Hospital and Public Health Management in U.S.A., Europe, Australia and Asia (Scholarship from Ministry of Public Health, JICA Scholarship from Japanese Government and USAID Scholarship from U.S.A. Government) </li>
+</ul>
+	
+<h4>Work Experiences</h4>	
+<ul>
+	<li>Executive Director, Vichaiyut Hospital</li>
+	<li>Advisor of the Ministry of Public Health</li>
+	<li>Head of Inspector of the Ministry of Public Health</li>
+	<li>Advisor to the Deputy Minister, Ministry of Public Health</li>
+	<li>Advisor to the Permanent Secretary, Ministry of Public Health</li>
+</ul>
+	
+<h4>Honours and Awards</h4>	
+<ul>
+	<li>Knight and Dame Grand Cordon (Special Class) of the Most Exalted Order of the White Elephant</li>
+</ul>
+	
+	<ul>
+		<li>Knight and Dame Grand Cordon (Special Class) of the Most Noble Order of the Crown of Thailand</li>
+	<li>Honour Outstanding Hospital Director (Affiliated with Ministry of Public Health of Thailand)</li>
+	<li>Honour Outstanding Public Health Officer in Service Management</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#kamthorn-pha">
+							<h4 class="list-group-item-heading">Dr. Kamthorn Phaosawasdi</h4>
+							<div id="kamthorn-pha" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/kamthorn.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>	
+									<ul>
+									<li>Executive Director and Director of Vichaiyut Hospital</li>
+								</ul>
+	
+<h4>Speciality</h4>	
+<ul>
+<li>Gastroenterology</li>
+</ul>
+	
+<h4>Language spoken</h4>	
+<ul>
+<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>	
+<ul>
+<li>"Faculty of Medicine Ramathibodi Hospital, Mahidol University
+"</li>
+</ul>
+	
+<h4>Residencies</h4>	
+<ul>
+<li>Internal Medicine, Thomas Jefferson University Hospital, U.S.A.</li>
+</ul>
+	
+<h4>Fellowships</h4>	
+<ul>
+<li>Gastroenterology, Temple University Hospital,  U.S.A.</li>
+</ul>
+	
+<h4>Certifications</h4>	
+<ul>
+<li>Diplomate, American Board of Internal Medicine </li>
+	<li>Diplomate, American Board of Gastroenterology</li>
+	<li>Advanced Achievement in Internal Medicine</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#phaiboon-jit">
+							<h4 class="list-group-item-heading">Dr. Phaiboon Jittivanich</h4>
+							<div id="phaiboon-jit" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/phaiboon.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>
+									<ul>
+									<li>Executive Director </li>
+								</ul>
+	
+<h4>Speciality</h4>
+<ul>
+<li>Obstetrics and Gynecology</li>
+</ul>
+	
+<h4>Language spoken</h4>
+<ul>
+<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>
+<ul>
+<li>Faculty of Medicine Ramathibodi Hospital, Mahidol University</li>
+</ul>
+	
+<h4>Residencies</h4>
+<ul>
+<li>Obstetrics and Gynecology, Albany Medical College, Albany, New York,U.S.A.</li>
+</ul>
+	
+ <h4>Fellowships</h4>
+ <ul>
+ <li>Gynecology (Infertility and Gynecologic Endocrinology), Peter Bent Brigham Hospital, Harvard Medical School, Boston, Massachusetts,U.S.A.</li>
+</ul>
+	
+<h4>Certifications</h4>
+<ul>
+<li>Diplomate, American Board of Obstetrics and Gynecology</li>
+	<li>Master of Management, SASIN Graduate Institute of Business Administration, Chulalongkorn University</li>
+</ul>
+	
+<h4>Members</h4>
+<ul>
+<li>Fellow, American College of Obstetricians and Gynecologists</li>
+	<li>Member, American Society for Reproductive Medicine</li>
+	<li>Member and ART (Assisted Reproductive Technology) physician, Royal Thai College of Obstetricians and Gynecologists.</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#phrot-tho">
+							<h4 class="list-group-item-heading">Dr. Phrot Thongvanit</h4>
+							<div id="phrot-tho" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/phrot.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>
+									<ul>
+									<li>Executive Director</li>
+								</ul>
+	
+<h4>Speciality</h4>
+<ul>
+<li>Anaesthesiology</li>
+</ul>
+	
+<h4>Language spoken</h4>
+<ul>
+<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>
+<ul>
+<li>Faculty of Medicine Siriraj Hospital, Mahidol University</li>
+</ul>
+	
+<h4>Residencies</h4>
+<ul>
+<li>Department of Anaesthesia, Siriraj Hospital</li>
+</ul>
+	
+<h4>Fellowships</h4>
+<ul>
+<li>Southend General Hospital, United of Kingdom</li>
+<li>Hammersmith  Hospital Postgraduated Medical School, United of Kingdom</li>
+</ul>
+	
+<h4>Certifications</h4>
+<ul>
+<li>Certificate of competing in Anaesthesiology, The Royal College of  Anaesthesiology of Thailand</li>
+<li>Diploma in Anaesthetics of the Royal College of Physicians and  Surgeons of England</li>
+<li>Fellow of the Royal College of Anaesthetists of England</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#surawut-pri">
+							<h4 class="list-group-item-heading">Dr. Surawut Prichanond</h4>
+							<div id="surawut-pri" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/surawut.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+									<h4>Position</h4>
+									<ul>
+										<li>Executive Director</li>
+									</ul>
+	
+<h4>Speciality</h4>
+<ul>
+<li>Internal Medicine</li>
+<li>Rheumatology</li>
+</ul>
+	
+<h4>Language spoken</h4>
+<ul>
+	<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>
+<ul>
+	<li>Faculty of Medicine Ramathibodi Hospital, Mahidol University</li>
+</ul>
+	
+<h4>Residencies</h4>
+<ul>
+	<li>Saint Joseph Hospital, U.S.A. (Affiliated with Loyola University, U.S.A.)</li>
+</ul>
+	
+<h4>Fellowships</h4>
+<ul>
+<li>Arthritis and Metaholic Diseases, University of Chicago, U.S.A.</li>
+<li>Rheumatology, University of Illinois, U.S.A.</li>
+</ul>
+	
+<h4>Certifications</h4>
+<ul>
+<li>Thai Board of Internal Medicine</li>
+<li>Thai Board of Rheumatology</li>
+<li>Diplomate, American Board of Internal Medicine</li>
+<li>Diplomate, American Board of Rheumatology</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#vichian-kan">
+							<h4 class="list-group-item-heading">Dr. Vichian Kanchanapoomi</h4>
+							<div id="vichian-kan" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/vichian.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+<h4>Position</h4>
+<ul>
+<li>Executive Director and Director of Vichaiyut Hospital Medical Center</li>
+</ul>
+	
+<h4>Speciality</h4>
+<ul>
+<li>Orthopaedic Surgery</li>
+</ul>
+	
+<h4>Language spoken</h4>
+<ul>
+<li>Thai, English</li>
+</ul>
+	
+<h4>Medical school</h4>
+<ul>
+<li>Faculty of Medicine Siriraj Hospital, Mahidol University</li>
+</ul>
+	
+<h4>Residencies</h4>
+<ul>
+<li>Orthopaedic Surgery, Faculty of Medicine Siriraj Hospital, Mahidol University</li>
+<li>Orthopaedic Surgery, Maimomides & Coney Island Hospital Medical Center, New York, U.S.A.</li>
+</ul>
+	
+<h4>Fellowships</h4>
+<ul>
+<li>Orthopaedic Surgery</li>
+</ul>
+	
+<h4>Certifications</h4>
+<ul>
+<li>Diplomate, American Board of Orthopaedic Surgery</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#rangsi-rat">
+							<h4 class="list-group-item-heading">Mr. Rangsi Ratanaprakarn</h4>
+							<div id="rangsi-rat" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/rangsi.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+<h4>Position</h4>
+<ul>
+<li>Executive Director</li>
+</ul>
+<h4>Education</h4>
+<ul>
+<li>Master of Science (Structural Engineering), University of Illinois, U.S.A.</li>
+<li>Bachelor of Engineering, Chulalongkorn University</li>
+</ul>
+<h4>Work Experiences</h4>
+<ul>
+<li>Executive Director, Vichaiyut Hospital</li>
+<li>President of Charintr Mining Co.,Ltd</li>
+<li>President of Thai Engineering Consultant Co.,Ltd</li>
+</ul>
+<h4>Honours and Awards</h4>
+<ul>
+<li>President of The Consulting Engineers Association of Thailand</li>
+<li>Member of Engineering Institute of Thailand</li>
+<li>Member of The Consulting Engineers Association of Thailand</li>
+</ul>
+
+								</div>
+							</div>
+						</a>
+						<a href="#" class="list-group-item" data-toggle="collapse" data-target="#watana-lim">
+							<h4 class="list-group-item-heading">Mrs. Watana Limnararat</h4>
+							<div id="watana-lim" class="collapse profile-doctor">
+								<div class="profile-thumb col-md-3">
+									<img src="img/watana.jpg" class="pic-profile">
+								</div>
+								<div class="profile-detail col-md-9">
+<h4>Position</h4>
+<ul>
+<li>Executive Vice President</li>
+</ul>
+	
+<h4>Education</h4>
+<ul>
+<li>Master of Business Administration, Sasin Graduate Institute of Business Administration of Chulalongkorn University</li>
+<li>Bachelor of Business Administration (Major Finance and Banking), Ramkhamhaeng University</li>
+<li>Certificate of Director Certification Program (DCP134) University, Thai Institute of Director (IOD)</li>
+<li>Certificate of Capital Market Academy (CMA9) University</li>
+</ul>
+	
+<h4>Work Experiences</h4>
+<ul>
+<li>Executive Vice President, Vichaiyut Hospital</li>
+<li>Director / Head of Business Advisory Services and Head of Market Groups, KPMG Phoomchai Business Advisory Ltd.</li>
+<li>Executive Director, Arthur Anderson Business Advisory Co., Ltd.</li>
+<li>Senior Vice President, Business Development Depart, Phatra Thanakit Finance and Security Co., Ltd.</li>
+<li>First Vice President, Manufactory and Service Lending Department, Kasikornthai Bank </li>
+</ul>
+	
+<h4>Honours and Awards</h4>
+<ul>
+<li>Director and Treasury of Rakkaew Foundation</li>
+<li>Judge of Student in Free Enterprise (SIFE), National and World Cup</li>
+<li>Lecturer of Thai Institute of Banking and Finance Association</li>
+<li>Director of Credit Executive Club, Association of Finance Companies</li>
+<li>Director of the Credit Executive Club, The Thai Bankers Association</li>
+<li>Certificate of Executive Top Performance, Kasikornbank Public Company Limited</li>
+<li>Master Degree Program (Kasikornthai Bank Scholarship)</li>
+<li>International Banking and Documentary Credit Program in the United Kingdom (Kasikornthai Bank Scholarship)</li>
+</ul>
+
+								</div>
+							</div>
+						</a >-->
+					</div>
+				</div>
+				<!-- End Doctor List-->
+			</div>
+		</div>
+	</section><!-- end of team section -->
+
+	<div class="col-md-12 map" id="map" style="display:none;"></div>
+
+	<!-- footer starts here -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy;All right reserved</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<a href="https://www.facebook.com/vichaiyutpage"><i class="fa fa-facebook"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll-custom.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
